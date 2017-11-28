@@ -1,0 +1,1035 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>ETAP 2</title>
+    <style type="text/css">
+        .socialLinks {
+            font-size: 6px;
+        }
+        
+        .socialLinks a {
+            display: inline-block;
+        }
+        
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: #aca49c;
+            font-size: 0.875em;
+        }
+        
+        input:focus::-webkit-input-placeholder,
+        textarea:focus::-webkit-input-placeholder {
+            color: #bbb5af;
+        }
+        
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
+            color: #aca49c;
+            font-size: 0.875em;
+        }
+        
+        input:focus::-moz-placeholder,
+        textarea:focus::-moz-placeholder {
+            color: #bbb5af;
+        }
+        
+        input::placeholder,
+        textarea::placeholder {
+            color: #aca49c;
+            font-size: 0.875em;
+        }
+        
+        input:focus::placeholder,
+        textarea::focus:placeholder {
+            color: #bbb5af;
+        }
+        
+        input::-ms-placeholder,
+        textarea::-ms-placeholder {
+            color: #aca49c;
+            font-size: 0.875em;
+        }
+        
+        input:focus::-ms-placeholder,
+        textarea:focus::-ms-placeholder {
+            color: #bbb5af;
+        }
+        /* on hover placeholder */
+        
+        input:hover::-webkit-input-placeholder,
+        textarea:hover::-webkit-input-placeholder {
+            color: #e2dedb;
+            font-size: 0.875em;
+        }
+        
+        input:hover:focus::-webkit-input-placeholder,
+        textarea:hover:focus::-webkit-input-placeholder {
+            color: #cbc6c1;
+        }
+        
+        input:hover::-moz-placeholder,
+        textarea:hover::-moz-placeholder {
+            color: #e2dedb;
+            font-size: 0.875em;
+        }
+        
+        input:hover:focus::-moz-placeholder,
+        textarea:hover:focus::-moz-placeholder {
+            color: #cbc6c1;
+        }
+        
+        input:hover::placeholder,
+        textarea:hover::placeholder {
+            color: #e2dedb;
+            font-size: 0.875em;
+        }
+        
+        input:hover:focus::placeholder,
+        textarea:hover:focus::placeholder {
+            color: #cbc6c1;
+        }
+        
+        input:hover::placeholder,
+        textarea:hover::placeholder {
+            color: #e2dedb;
+            font-size: 0.875em;
+        }
+        
+        input:hover:focus::-ms-placeholder,
+        textarea:hover::focus:-ms-placeholder {
+            color: #cbc6c1;
+        }
+        
+        #form {
+            position: relative;
+            width: 330px;
+            margin: 50px auto 100px auto;
+            @include dw(1000) {
+                width: 350px;
+            }
+        }
+        
+        input {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+            width: 330px;
+            height: 50px;
+            padding: 0px 15px 0px 15px;
+            background: transparent;
+            outline: none;
+            color: #726659;
+            border: solid 1px #b3aca7;
+            border-bottom: none;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            @include dw(1000) {
+                width: 320px;
+            }
+        }
+        
+        input:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+        
+        textarea {
+            width: 330px;
+            height: 110px;
+            max-height: 110px;
+            padding: 15px;
+            background: transparent;
+            outline: none;
+            color: #726659;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+            border: solid 1px #b3aca7;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            @include dw(1000) {
+                width: 320px;
+            }
+        }
+        
+        textarea:hover {
+            background: #b3aca7;
+            color: #e2dedb;
+        }
+        
+        #submit {
+            width: 362px;
+            padding: 0;
+            margin: -5px 0px 0px 0px;
+            font-family: 'Lato', sans-serif;
+            font-size: 0.875em;
+            color: #b3aca7;
+            outline: none;
+            cursor: pointer;
+            border: solid 1px #b3aca7;
+            border-top: none;
+            @include dw(1000) {
+                width: 354px;
+            }
+        }
+        
+        #submit:hover {
+            color: #e2dedb;
+        }
+        
+        .socialIcon {
+            display: inline-block;
+            vertical-align: top;
+            padding-bottom: 0px;
+            border-radius: 100%;
+        }
+        
+        table.vb-row.halfpad {
+            border-spacing: 0;
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+        
+        table.vb-row.fullwidth {
+            border-spacing: 0;
+            padding: 0;
+        }
+        
+        table.vb-container.fullwidth {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    </style>
+    <style type="text/css">
+        /* yahoo, hotmail */
+        
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+        
+        .vb-outer {
+            min-width: 0 !important;
+        }
+        
+        .RMsgBdy,
+        .ExternalClass {
+            width: 100%;
+            background-color: #3f3f3f;
+            background-color: #3f3f3f
+        }
+        /* outlook */
+        
+        table {
+            mso-table-rspace: 0pt;
+            mso-table-lspace: 0pt;
+        }
+        
+        #outlook a {
+            padding: 0;
+        }
+        
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+        }
+        
+        a img {
+            border: none;
+        }
+        
+        @media screen and (max-device-width: 600px),
+        screen and (max-width: 600px) {
+            table.vb-container,
+            table.vb-row {
+                width: 95% !important;
+            }
+            .mobile-hide {
+                display: none !important;
+            }
+            .mobile-textcenter {
+                text-align: center !important;
+            }
+            .mobile-full {
+                float: none !important;
+                width: 100% !important;
+                max-width: none !important;
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+            }
+            img.mobile-full {
+                width: 100% !important;
+                max-width: none !important;
+                height: auto !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        #ko_textBlock_4 .links-color a,
+        #ko_textBlock_4 .links-color a:link,
+        #ko_textBlock_4 .links-color a:visited,
+        #ko_textBlock_4 .links-color a:hover {
+            color: #3f3f3f;
+            color: #3f3f3f;
+            text-decoration: underline;
+        }
+        
+        #ko_textBlock_5 .links-color a,
+        #ko_textBlock_5 .links-color a:link,
+        #ko_textBlock_5 .links-color a:visited,
+        #ko_textBlock_5 .links-color a:hover {
+            color: #3f3f3f;
+            color: #3f3f3f;
+            text-decoration: underline;
+        }
+        
+        #ko_textBlock_6 .links-color a,
+        #ko_textBlock_6 .links-color a:link,
+        #ko_textBlock_6 .links-color a:visited,
+        #ko_textBlock_6 .links-color a:hover {
+            color: #3f3f3f;
+            color: #3f3f3f;
+            text-decoration: underline;
+        }
+        
+        #ko_textBlock_8 .links-color a,
+        #ko_textBlock_8 .links-color a:link,
+        #ko_textBlock_8 .links-color a:visited,
+        #ko_textBlock_8 .links-color a:hover {
+            color: #3f3f3f;
+            color: #3f3f3f;
+            text-decoration: underline;
+        }
+        
+        #ko_textBlock_26 .links-color a,
+        #ko_textBlock_26 .links-color a:link,
+        #ko_textBlock_26 .links-color a:visited,
+        #ko_textBlock_26 .links-color a:hover {
+            color: #3f3f3f;
+            color: #3f3f3f;
+            text-decoration: underline;
+        }
+        
+        #ko_textBlock_28 .links-color a,
+        #ko_textBlock_28 .links-color a:link,
+        #ko_textBlock_28 .links-color a:visited,
+        #ko_textBlock_28 .links-color a:hover {
+            color: #3f3f3f;
+            color: #3f3f3f;
+            text-decoration: underline;
+        }
+        
+        #ko_textBlock_29 .links-color a,
+        #ko_textBlock_29 .links-color a:link,
+        #ko_textBlock_29 .links-color a:visited,
+        #ko_textBlock_29 .links-color a:hover {
+            color: #3f3f3f;
+            color: #3f3f3f;
+            text-decoration: underline;
+        }
+        
+        #ko_sideArticleBlock_3 .links-color a,
+        #ko_sideArticleBlock_3 .links-color a:link,
+        #ko_sideArticleBlock_3 .links-color a:visited,
+        #ko_sideArticleBlock_3 .links-color a:hover {
+            color: #3f3f3f;
+            color: #3f3f3f;
+            text-decoration: underline;
+        }
+        
+        #ko_footerBlock_2 .links-color a:visited,
+        #ko_footerBlock_2 .links-color a:hover {
+            color: #ccc;
+            color: #ccc;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body bgcolor="#3f3f3f" text="#919191" alink="#cccccc" vlink="#cccccc" style="margin: 0;padding: 0;background-color: #3f3f3f;color: #919191;">
+
+    <center>
+
+        <!-- preheaderBlock -->
+
+        <!-- /preheaderBlock -->
+
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_sideArticleBlock_3">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-row fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 9px;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" class="mobile-row" valign="top" style="font-size: 0;">
+
+                                            <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]-->
+
+                                            <!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184"><![endif]-->
+                                            <div class="mobile-full" style="display: inline-block; max-width: 184px; vertical-align: top; width: 100%;">
+
+                                                <table class="vb-content" border="0" cellspacing="9" cellpadding="0" width="184" align="left" style="border-collapse: separate;width: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="100%" valign="top" align="left" class="links-color">
+
+                                                                <img border="0" hspace="0" vspace="0" width="166" class="mobile-full" alt="" style="border: 0px;display: block;vertical-align: top;width: 100%;height: auto;max-width: 166px;" src="https://mosaico.io/srv/f-6f86t80/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2F6f86t80%2Flogofb.png&amp;method=resize&amp;params=166%2Cnull"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!--[if (gte mso 9)|(lte ie 8)]></td>
+<![endif]-->
+                                            <!--[if (gte mso 9)|(lte ie 8)]>
+<td align="left" valign="top" width="368">
+<![endif]-->
+                                            <div class="mobile-full" style="display: inline-block; max-width: 368px; vertical-align: top; width: 100%;">
+
+                                                <table class="vb-content" border="0" cellspacing="9" cellpadding="0" width="368" align="left" style="border-collapse: separate;width: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-align: left;">
+                                                                <span style="color: #3f3f3f;">Rejestracja Kont</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" class="long-text links-color" style="text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f;">
+                                                                <p style="margin: 1em 0px;margin-top: 0px;">Sposób na zarobek bez inwestycji traktuj jako wstęp do pracy w internecie, niebawem udowodnię Ci, że w internecie można zarabiać znacznie więcej a co najważniejsze co miesiąc. Jeśli będziesz
+                                                                    działać szybko, sprawnie i bez ociągania się poznasz wiele nowych technik i metod pracy i sam uznasz, że praca w sieci nie jest wcale taka trudna.</p>
+                                                                <p style="margin: 1em 0px;"> </p>
+                                                                <p style="margin: 1em 0px;margin-bottom: 0px;">Jeśli nasza współpraca będzie przebiegała bez zarzutu, nauczę Cię skutecznie zarabiać na tyle abyś mógł w krótkim czasie zwolnić się z etatu, lub jeśli na nim nie jesteś stworzyć sobie źródło
+                                                                    dochodu które będzie Ci dawać minimum 3 tysiące miesięcznie.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!--[if (gte mso 9)|(lte ie 8)]></td>
+<![endif]-->
+                                            <!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]-->
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_textBlock_4">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" class="long-text links-color" style="text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f;">
+                                            <p style="margin: 1em 0px;margin-bottom: 0px;margin-top: 0px;">U Nas nie ma ściemy masz wszystko czarne na białym.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_textBlock_5">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" class="long-text links-color" style="text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f;">
+                                            <p style="margin: 1em 0px;margin-bottom: 0px;margin-top: 0px;">Zapewne Doczytałes się w mailach bądz postach na facebooku że sposób na zarobek w internecie który reklamuję nazywa się MARKETING AFILACYJNY   czyli to zyskująca popularność technika marketingu internetowego,
+                                                w której reklamodawca (sprzedawca) deleguje wykonanie działań marketingowych na licznych niezależnych marketingowców (partnerów), którzy opłacani są w modelu “za efekt”.<br></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_textBlock_6">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" class="long-text links-color" style="text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f;">
+                                            <p style="margin: 1em 0px;margin-bottom: 0px;margin-top: 0px;">Czyli bez żadnych zobowiązań finansowych umów itp. ile chcesz, kiedy chcesz. Jesteś swoim pracodawcą.<br></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_textBlock_8">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" class="long-text links-color" style="text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f;">
+                                            <p style="margin: 1em 0px;margin-top: 0px;">Pytasz gdzie jest haczyk, co "On" mi próbuje wcisnąć . . . .</p>
+                                            <p style="margin: 1em 0px;">Nic z czego możesz mieć nieprzyjemności bądz konsekwencje prawne lub finansowe</p>
+                                            <p style="margin: 1em 0px;"><br data-mce-bogus="1"></p>
+                                            <p style="margin: 1em 0px;">Oferuję Ci założenie kont BANKOWYCH których prowadzenie jest darmowe. W momencie podpisania umowy z bankiem (kurier przywozi umowe do podpisania i przy kurierze dokonuje się wszystkich formalności) - przystępujemy
+                                                do etapu ostatniego czyli przedstawieniu Ci modelu biznesu z mojej perspektywy, jak się zareklamować jak zachęcić użytkownia i nauczę Cie zautomatyzować biznes online, ja przy obecnym procesie rozwijania
+                                                mojego biznesu jestem w stanie zarobić tygodniowo ok 2 tys. spędzając ok 1h (w internecie tzn. telefon główne narzędzie).</p>
+                                            <p style="margin: 1em 0px;"><br data-mce-bogus="1"></p>
+                                            <p style="margin: 1em 0px;"><br></p>
+                                            <p style="margin: 1em 0px;">Te konta które założysz ja otrzymam za nie prowizje ok 60-80 zł za jedno konto i to jest moja zapłata za udostępnienie Ci moich materiałów które pomogły nie jednej osobie do zwiększenia swoich dochodów.</p>
+                                            <p style="margin: 1em 0px;"><br data-mce-bogus="1"></p>
+                                            <p style="margin: 1em 0px;">U mnie nie ma ściemy . . ., nie mam zamiaru wciskać Ci opowiastek że potrzebujesz 6 -10 kont by zacząć oszczędzać Ty poprostu musisz wykonać 3 etapy aby zacząc zarabiać ot cały przepis.</p>
+                                            <p style="margin: 1em 0px;"><br data-mce-bogus="1"></p>
+                                            <p style="margin: 1em 0px;">codziennie jestem do dyspozycji na FB bądz email w godzinach 15:00 - 22:00</p>
+                                            <p style="margin: 1em 0px;"><br data-mce-bogus="1"></p>
+                                            <p style="margin: 1em 0px;">kontakt@zacznijzarabiac.eu</p>
+                                            <p style="margin: 1em 0px;"><br data-mce-bogus="1"></p>
+                                            <p style="margin: 1em 0px;margin-bottom: 0px;"><br data-mce-bogus="1"></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_titleBlock_22">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 9px;padding-left: 9px;padding-right: 9px;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" style="background-color: #ffffff; font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-align: center;">
+                                            <span>1</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_buttonBlock_10">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" bgcolor="#ffffff" align="center" style="background-color: #ffffff;">
+
+                                            <table cellpadding="0" border="0" align="center" cellspacing="0" class="mobile-full">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="auto" valign="middle" bgcolor="#bfbfbf" align="center" height="50" style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; font-weight: normal; padding-left: 14px; padding-right: 14px; background-color: #bfbfbf; border-radius: 4px;">
+                                                            <a target="_new" href="http://youngentrepreneur.ebrokerpartner.pl/short/4racx" style="text-decoration: none; color: #3f3f3f; font-weight: normal;">M Bank</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_titleBlock_23">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 9px;padding-left: 9px;padding-right: 9px;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" style="background-color: #ffffff; font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-align: center;">
+                                            <span>2</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_buttonBlock_11">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" bgcolor="#ffffff" align="center" style="background-color: #ffffff;">
+
+                                            <table cellpadding="0" border="0" align="center" cellspacing="0" class="mobile-full">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="auto" valign="middle" bgcolor="#bfbfbf" align="center" height="50" style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; font-weight: normal; padding-left: 14px; padding-right: 14px; background-color: #bfbfbf; border-radius: 4px;">
+                                                            <a target="_new" href="http://youngentrepreneur.ebrokerpartner.pl/short/4rlj1" style="text-decoration: none; color: #3f3f3f; font-weight: normal;">Nest Bank</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_titleBlock_14">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 9px;padding-left: 9px;padding-right: 9px;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" style="background-color: #ffffff; font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-align: center;">
+                                            <span>3<br><br data-mce-bogus="1"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_buttonBlock_13">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" bgcolor="#ffffff" align="center" style="background-color: #ffffff;">
+
+                                            <table cellpadding="0" border="0" align="center" cellspacing="0" class="mobile-full">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="auto" valign="middle" bgcolor="#bfbfbf" align="center" height="50" style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; font-weight: normal; padding-left: 14px; padding-right: 14px; background-color: #bfbfbf; border-radius: 4px;">
+                                                            <a target="_new" href="http://youngentrepreneur.ebrokerpartner.pl/short/4rlj5" style="text-decoration: none; color: #3f3f3f; font-weight: normal;">BGŻ<span id="_mce_caret" data-mce-bogus="true"><em>﻿</em></span></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_titleBlock_15">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 9px;padding-left: 9px;padding-right: 9px;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" style="background-color: #ffffff; font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-align: center;">
+                                            <span>4<br><br></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_buttonBlock_16">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" bgcolor="#ffffff" align="center" style="background-color: #ffffff;">
+
+                                            <table cellpadding="0" border="0" align="center" cellspacing="0" class="mobile-full">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="auto" valign="middle" bgcolor="#bfbfbf" align="center" height="50" style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; font-weight: normal; padding-left: 14px; padding-right: 14px; background-color: #bfbfbf; border-radius: 4px;">
+                                                            <a target="_new" href="http://youngentrepreneur.ebrokerpartner.pl/short/4rljf" style="text-decoration: none; color: #3f3f3f; font-weight: normal;">milleniumBank</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_titleBlock_17">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 9px;padding-left: 9px;padding-right: 9px;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" style="background-color: #ffffff; font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-align: center;">
+                                            <span>5<br><br></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_buttonBlock_18">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" bgcolor="#ffffff" align="center" style="background-color: #ffffff;">
+
+                                            <table cellpadding="0" border="0" align="center" cellspacing="0" class="mobile-full">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="auto" valign="middle" bgcolor="#bfbfbf" align="center" height="50" style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; font-weight: normal; padding-left: 14px; padding-right: 14px; background-color: #bfbfbf; border-radius: 4px;">
+                                                            <a target="_new" href="http://youngentrepreneur.ebrokerpartner.pl/short/4rljj" style="text-decoration: none; color: #3f3f3f; font-weight: normal;">EuroBank</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_titleBlock_19">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 9px;padding-left: 9px;padding-right: 9px;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" style="background-color: #ffffff; font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-align: center;">
+                                            <span>6</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_buttonBlock_20">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" bgcolor="#ffffff" align="center" style="background-color: #ffffff;">
+
+                                            <table cellpadding="0" border="0" align="center" cellspacing="0" class="mobile-full">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="auto" valign="middle" bgcolor="#bfbfbf" align="center" height="50" style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; font-weight: normal; padding-left: 14px; padding-right: 14px; background-color: #bfbfbf; border-radius: 4px;">
+                                                            <a target="_new" href="http://youngentrepreneur.ebrokerpartner.pl/short/4rljn" style="text-decoration: none; color: #3f3f3f; font-weight: normal;">Get In Bank</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_titleBlock_24">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 9px;padding-left: 9px;padding-right: 9px;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" style="background-color: #ffffff; font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-align: center;">
+                                            <span>7</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_buttonBlock_25">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" bgcolor="#ffffff" align="center" style="background-color: #ffffff;">
+
+                                            <table cellpadding="0" border="0" align="center" cellspacing="0" class="mobile-full">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="auto" valign="middle" bgcolor="#bfbfbf" align="center" height="50" style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; font-weight: normal; padding-left: 14px; padding-right: 14px; background-color: #bfbfbf; border-radius: 4px;">
+                                                            <a target="_new" href="http://youngentrepreneur.ebrokerpartner.pl/short/4rljt" style="text-decoration: none; color: #3f3f3f; font-weight: normal;">Intelligo</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_textBlock_26">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" class="long-text links-color" style="text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f;">
+                                            <p style="margin: 1em 0px;margin-bottom: 0px;margin-top: 0px;text-align: center;" data-mce-style="text-align: center;">Założenie tych kont jest warunkiem do dotarcia do osatniego Etapu<br></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_textBlock_28">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" class="long-text links-color" style="text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f;">
+                                            <p style="margin: 1em 0px;margin-bottom: 0px;margin-top: 0px;">Konta bankowe z linków, które Ci podałem, w większości są całkowicie bez opłat, albo opłat można uniknąć. Ponieważ te warunki się zmieniają, trzeba je sprawdzać. </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_textBlock_29">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 18px;padding-left: 0;padding-right: 0;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td align="left" class="long-text links-color" style="text-align: left; font-size: 13px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f;">
+                                            <p style="margin: 1em 0px;margin-bottom: 0px;margin-top: 0px;">Pamiętaj, że nikt Cię tutaj do niczego nie zmusza i że możesz się wycofać w każdym momencie i możesz działać samemu na własną rękę, jeśli uważasz, że sobie poradzisz.<br> Ale jeśli chcesz, żebym poświęcił Ci
+                                                swój czas to nie szukaj wymówek tylko działaj :)</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_titleBlock_30">
+            <tbody>
+                <tr>
+                    <td class="vb-outer" align="center" valign="top" bgcolor="#bfbfbf" style="padding-left: 9px;padding-right: 9px;background-color: #bfbfbf;">
+
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+                        <div class="oldwebkit" style="max-width: 570px;">
+                            <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" bgcolor="#ffffff" style="border-collapse: separate;border-spacing: 9px;padding-left: 9px;padding-right: 9px;width: 100%;max-width: 570px;background-color: #fff;">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="center" style="background-color: #ffffff; font-size: 22px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-align: center;">
+                                            <span>Po weryfikacji wniosków (czyli po zatwierdzeniu ich online lub przez kuriera) wysyłam Ci wszystkie dane do zarabiania pieniędzy</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- footerBlock -->
+        <table width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#3f3f3f" style="background-color: #3f3f3f;" id="ko_footerBlock_2">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" bgcolor="#3f3f3f" style="background-color: #3f3f3f;">
+                        <div class="contact-form ">
+                            <h3>Daj znać o ukończeniu PIERWSZEGO ETAPU abyśmy mogli przekazaCi kolejne wskazówki</h3>
+                            <form method="post" id="form" class="" method="post" id="contactform" name="contactform" action="mail/contact.php">
+
+                                <input id="name" name="name" type="text" placeholder="IMIĘ i NAZWISKO">
+                                <input id="email" name="email" type="text" placeholder="E-MAIL">
+                                <textarea id="comments" name="comments" type="text">Zakonczylem 2 etap - Po weryfikacji Wniosków Wysłac SZKOLENIA</textarea>
+                                <input id="submit" name="submit" type="submit" value="Zacznij Zarabiać">
+                            </form>
+                        </div>
+                        <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+
+                        <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- /footerBlock -->
+    </center>
+</body>
+
+</html>

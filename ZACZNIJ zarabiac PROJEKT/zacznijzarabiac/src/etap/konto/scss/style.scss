@@ -1,0 +1,51 @@
+.outline {
+    outline: 1px solid red;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.image-head {
+    img {
+        max-width: 100%;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mt {
+    margin-top: 80px;
+}
+
+.mb {
+    margin-bottom: 80px;
+}
+
+.contact-form {
+    margin-top: 150px;
+}
+
+.hide {
+    display: none;
+}
+
+#btn {
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+}
